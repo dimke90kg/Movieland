@@ -23,12 +23,12 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>MovieLand</h1>
+      <h1>SvetFilmova.com</h1>
       <div className="search">
         <input
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          placeholder="Search for movie"
+          placeholder="Pretraga filmova"
         />
         <img
           src={SearchIcon}
@@ -45,7 +45,7 @@ const App = () => {
         </div>
       ) : (
         <div className="empty">
-          <h2>No movies found</h2>
+          <h2>Film nije pronadjen</h2>
         </div>
       )}
     </div>
